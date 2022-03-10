@@ -1,0 +1,30 @@
+.navbar{
+    height: 7rem;
+    background-color: $primary;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__nav{
+        a{
+            font-size: 1.5rem;
+        }
+
+        &__item{
+            list-style-type: none;
+            display: inline-block;
+            transition: all .3s;
+            margin-right: 1.7rem;
+            &--number{
+                color: $secondary;
+            }
+
+            // psodo
+            &:hover{
+                color: $secondary;
+            }
+        }
+      
+    }
+}
