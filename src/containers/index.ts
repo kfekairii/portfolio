@@ -1,3 +1,4 @@
+import Layout from "./Layout";
 import Nav from "./Nav";
 
-export { Nav };
+export { Nav, Layout };

@@ -1,11 +1,14 @@
-.btn{
-    display: inline-block;
-    color: $secondary;
-    border: .2rem solid $secondary ;
-    font-size: 1.5rem;
-    padding: .7rem 1.4rem ;
-    margin-left: 2rem;
-    cursor: pointer;
+.btn {
+  display: inline-block;
+  color: $secondary;
+  border: 0.1rem solid $secondary;
+  font-size: 1.4rem;
+  padding: 0.7rem 1.4rem;
+  margin-left: 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
 
-    // TODO: Add button annimation onClick 
+  &:hover {
+    background-color: $primary-lightest;
+  }
 }

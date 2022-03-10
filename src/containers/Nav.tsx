@@ -5,19 +5,19 @@ import { AppButton, NavItem } from "../components";
 
 const navLinks = [
   {
-    name: "About",
+    name: " About",
     url: "/#about",
   },
   {
-    name: "Experience",
+    name: " Experience",
     url: "/#jobs",
   },
   {
-    name: "Work",
+    name: " Work",
     url: "/#projects",
   },
   {
-    name: "Contact",
+    name: " Contact",
     url: "/#contact",
   },
 ];
@@ -26,7 +26,7 @@ function Nav() {
   return (
     <>
       <div className="navbar">
-        <Image src={Logo} height={42} width={42} alt="logo" />
+        <Image src={Logo} height={46} width={46} alt="logo" />
         <nav>
           <ul className="navbar__nav">
             {navLinks.map((navLink, i) => (

@@ -1,23 +1,5 @@
 @import "./constants/constants";
+@import "./base/base";
 @import "./components/components";
 @import "./containers/containers";
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: $white-gray;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import "./sections/sections";

@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
-import { AppHead } from "../components";
-import { Nav } from "../containers";
+import { Layout } from "../containers";
+import { Hero } from "../sections";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <AppHead />
-      <Nav />
-    </>
+    <Layout>
+      <Hero />
+    </Layout>
   );
 };
 
