@@ -1,3 +1,7 @@
+@import "./mixins";
+@import "./animations";
+
+
 html,
 body {
   padding: 0;
@@ -6,7 +10,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: $white-gray;
+
+  &.blur {
+    overflow: hidden;
+  
+    header {
+      background-color: transparent;
+    }
+  
+    #content > * {
+      filter: blur(5px) brightness(0.7);
+      transition: all 0.3s ease-out;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
 }
+
 
 a {
   color: inherit;

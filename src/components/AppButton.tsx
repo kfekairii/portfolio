@@ -2,11 +2,12 @@ import React from "react";
 
 interface AppButtonProps {
   onClick?: () => {};
+  classes?: string;
 }
 
-function AppButton({ onClick }: AppButtonProps) {
+function AppButton({ onClick, classes }: AppButtonProps) {
   return (
-    <div className="btn" onClick={onClick}>
+    <div className={`btn ${classes}`} onClick={onClick}>
       Resume
     </div>
   );

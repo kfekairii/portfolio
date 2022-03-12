@@ -1,10 +1,40 @@
 .navbar {
   height: 7rem;
   background-color: $primary;
+  padding: 5rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left:0;
+  top:0;
+  transition: all ease-in-out .3s;
+  opacity: 1;
+
+  @media (max-width: $md) {
+    padding: 0 2.5rem;
+  }
+  
+  &--hide{
+    opacity: 0;
+  }
+  &--sticky{
+    opacity: .85;
+    // background-color: $primary-light;
+    padding: 0rem 5rem;
+    box-shadow: 0.2rem .2rem 2rem $primary-light;
+    backdrop-filter: blur(1rem);
+    @media (max-width: $md) {
+      padding: 0 2.5rem;
+    }
+
+  }
   &__nav {
+    position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
     a {
       font-size: 1.3rem;
       color: $gray-lightest;
@@ -15,10 +45,26 @@
       display: inline-block;
       transition: all 0.3s;
       margin-right: 2.5rem;
+      &--vertical{
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+      }
       &--number {
         color: $secondary;
+        &--vertical{
+          display: block;
+        font-size: 1.2rem;
+
+        }
       }
       &--text {
+        &--vertical{
+          display: block;
+          margin-bottom: 4rem;
+          color: $gray-light;
+          
+        }
         &:hover {
           color: $secondary;
         }

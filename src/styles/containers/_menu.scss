@@ -1,0 +1,20 @@
+.sidebar{
+  @include flex-center;
+  flex-direction: column;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 0;
+  background-color: $primary-light;
+  outline: 0;
+  box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+  z-index: 9;
+  transition: all 0.2s ease-in;
+  &--show{
+    visibility: visible;
+    width: min(75vw, 400px);;
+  }
+} 
