@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { memo, useEffect, useRef, useState } from "react";
-import { AppButton, BurgerButton, NavItem } from "../components";
+import { ResumeButton, BurgerButton, NavItem } from "../components";
 import useOnClickOutside from "../hooks/useOnClickOutside";
 import { navLinks } from "./Nav";
 
@@ -30,7 +30,6 @@ function Menu() {
 
   const wrapperRef = useRef(null);
   useOnClickOutside(wrapperRef, () => setOpenMenu(false));
-  console.log(openMenu);
   return (
     <div ref={wrapperRef} className="menu">
       <BurgerButton openMenu={openMenu} onClick={handleMenuDisplay} />
@@ -44,7 +43,7 @@ function Menu() {
             vertical
           />
         ))}
-        <AppButton classes="btn--vertical" />
+        <ResumeButton classes="btn--vertical" title="Resume" />
       </nav>
     </div>
   );

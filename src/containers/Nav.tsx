@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/icons/logo.svg";
-import { AppButton, NavItem } from "../components";
+import { ResumeButton, NavItem } from "../components";
 import useScrollDirection from "../hooks/useScrollDirection";
 import Menu from "./Menu";
 
@@ -49,7 +49,7 @@ function Nav() {
                 url={navLink.url}
               />
             ))}
-            <AppButton />
+            <ResumeButton title="Resume" />
           </ul>
           <Menu />
         </nav>

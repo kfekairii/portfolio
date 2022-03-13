@@ -1,0 +1,57 @@
+.hero{
+    @include flex-center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+
+    @media (max-width: 480px) and (min-height: 700px) {
+        padding-bottom: 10vh;
+      }
+
+    &__hi{
+        font-family: "Roboto Mono";
+        font-size: 1.4rem;
+        color: $secondary;
+
+        @media (max-width:$md) {
+            font-size: 1.2rem;
+        }
+    }
+    &__myname{
+        margin:.3rem 0 ;
+        font-size: 6rem;
+        color: $white-gray;
+        @media (max-width:$md) {
+            font-size: 4rem;
+        }
+    }
+    &__jobtitle{
+        margin:.3rem 0;
+        font-size: 6rem;
+        color: $gray;
+        @media (max-width:$md) {
+            font-size: 4rem;
+        }
+    }
+
+    &__brief{
+        margin: 20px 0 0;
+        max-width: 540px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.12rem;
+        color: $gray-light;
+        margin-bottom: 6rem;
+        font-weight: 400 !important;
+
+        @media (max-width:$md) {
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+            margin-bottom: 5rem;
+
+        }
+
+    }
+}
