@@ -1,17 +1,25 @@
-.about{
-    min-height: 100vh;
-    padding: 3rem;
-    display: flex;
-    @media (max-width:$md) {
-        flex-direction: column;
-        
-    }
-    &__left{
-        flex: 1;
+.about {
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  @media (max-width: $md) {
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+  &__left {
+    flex: 1;
 
+    &__body {
+      margin-top: 5rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: $gray-light;
     }
-    &__right{
-        flex: 1;
-        background-color: #fff;
-    }
+  }
+  &__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
