@@ -3,7 +3,7 @@ import { AppHead } from "../components";
 import Nav from "./Nav";
 
 interface LayoutProps {
-  children: JSX.Element;
+  children: JSX.Element[];
 }
 
 function Layout({ children }: LayoutProps) {

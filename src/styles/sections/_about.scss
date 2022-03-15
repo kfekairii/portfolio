@@ -1,0 +1,17 @@
+.about{
+    min-height: 100vh;
+    padding: 3rem;
+    display: flex;
+    @media (max-width:$md) {
+        flex-direction: column;
+        
+    }
+    &__left{
+        flex: 1;
+
+    }
+    &__right{
+        flex: 1;
+        background-color: #fff;
+    }
+}

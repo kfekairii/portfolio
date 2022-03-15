@@ -5,25 +5,34 @@
     min-height: 100vh;
     width: 100%;
     padding: 0;
-
-    @media (max-width: 480px) and (min-height: 700px) {
-        padding-bottom: 10vh;
-      }
-
+    @media (max-width:$lg) {
+        padding-top: 10rem;
+    }
+    @media (max-width:$sm) {
+        padding-top: 0
+    }
+   
     &__hi{
         font-family: "Roboto Mono";
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: $secondary;
 
         @media (max-width:$md) {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width:$sm) {
             font-size: 1.2rem;
         }
     }
     &__myname{
-        margin:.3rem 0 ;
-        font-size: 6rem;
-        color: $white-gray;
+        margin:.5rem 0 ;
+        font-size: 7rem;
+        color: $gray-lightest;
         @media (max-width:$md) {
+            font-size: 5.5rem;
+        }
+        @media (max-width:$sm) {
             font-size: 4rem;
         }
     }
@@ -32,6 +41,9 @@
         font-size: 6rem;
         color: $gray;
         @media (max-width:$md) {
+            font-size: 5rem;
+        }
+        @media (max-width:$sm) {
             font-size: 4rem;
         }
     }

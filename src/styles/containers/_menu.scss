@@ -12,8 +12,12 @@
   outline: 0;
   box-shadow: -10px 0px 30px -15px var(--navy-shadow);
   z-index: 9;
-  transition: all 0.2s ease-in;
+  transition: visibility 0.4s ease-out;
+  transition: width 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  font-size: 0;
   &--show{
+    font-size: 1.8rem;
     visibility: visible;
     width: min(75vw, 400px);;
   }
