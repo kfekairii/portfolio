@@ -76,7 +76,7 @@ function About() {
   return (
     <div className="about">
       <div className="about__left">
-        <SectionHeading />
+        <SectionHeading index={1} title="About me" />
         <div className="about__left__body">
           <p>
             I am a Full-Stack developer located in Algeria (Algiers). I am

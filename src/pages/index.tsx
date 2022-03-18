@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { Layout, Menu } from "../containers";
-import { About, Hero } from "../sections";
+import { About, Hero, Work } from "../sections";
 
 const Home: NextPage = () => {
   return (
@@ -8,6 +8,7 @@ const Home: NextPage = () => {
       <Layout>
         <Hero />
         <About />
+        <Work />
       </Layout>
     </>
   );
