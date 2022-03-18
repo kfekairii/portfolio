@@ -8,18 +8,93 @@
   }
   &__left {
     flex: 1;
+    @media (max-width: $md) {
+      padding-bottom: 10rem;
+    }
 
     &__body {
       margin-top: 5rem;
       font-size: 1.8rem;
       line-height: 2.5rem;
       color: $gray-light;
+
+      &__technologies{
+        display: flex;
+
+        @media (max-width: $md) {
+          flex-direction: column;
+        }
+        &__right,&__left{
+          
+          flex:1;
+          gap:1rem
+        }
+      }
     }
   }
   &__right {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
+
+    @media (max-width: $md) {
+      justify-content: center;
+
+    }
+
+    &__image-box{
+      background-color: $primary-light;
+      border-radius: $border-radius;
+      transition: background-color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
+      position: relative;
+
+      &:hover{
+        
+      background-color: $white-gray;
+        
+        &__image{
+          filter: none;
+        }
+      }
+
+  
+      
+      &__image{
+        transition: filter 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        filter: grayscale(100%) contrast(1);
+        mix-blend-mode: overlay;
+        &:hover{
+        filter: none;
+        mix-blend-mode: normal;
+
+        }
+      }
+
+
+    }
+
+  }
+  .skills-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: "Roboto Mono";
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      
+      span{
+        margin-left: .5rem;
+      }
+    }
   }
 }
