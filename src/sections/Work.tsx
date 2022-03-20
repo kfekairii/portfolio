@@ -11,37 +11,20 @@ interface IWork {
 
 const works: IWork[] = [
   {
-    company: "Digius",
+    company: "Digius Link Algeria",
     range: "Jan 2021 - Present",
     title: "IT Engineer",
     desc: [
-      "Start as a Helpdesk Engineer (Soft & Hard troubleshooting, Networking..etc)",
-      "And Embedded System Software Develper (Indestrial Timers, Counters and Temperature regulators)",
-      "Complete as Fullstack Developer.",
-      "Building platforms that the company needs (Reporting System, Work Orders Manager, Mini CRM ..etc).",
+      "Helpdesk tasks (Soft & Hard troubleshooting, Networking..etc)",
+      "Embedded System Software Develper (Indestrial Timers, Counters and Temperature regulators)",
+      "Fullstack Developer, Building platforms that the company needs (Reporting System, Work Orders Manager, Mini CRM ..etc)",
     ],
   },
   {
-    company: "ERPNext",
-    range: "Jan 2023 - Present",
-    title: "IT Engineer",
-    desc: [
-      " as a Helpdesk Engineer (Soft & Hard troubleshooting, Networking..etc)",
-      "And Embedded System Software Develper (Indestrial Timers, Counters and Temperature regulators)",
-      "Complete as Fullstack Developer.",
-      "Building platforms that the company needs (Reporting System, Work Orders Manager, Mini CRM ..etc).",
-    ],
-  },
-  {
-    company: "Bayt",
-    range: "Jan 2024 - Present",
-    title: "IT Engineer",
-    desc: [
-      " (Soft & Hard troubleshooting, Networking..etc)",
-      "And Embedded System Software Develper (Indestrial Timers, Counters and Temperature regulators)",
-      "Complete as Fullstack Developer.",
-      "Building platforms that the company needs (Reporting System, Work Orders Manager, Mini CRM ..etc).",
-    ],
+    company: "Future",
+    range: "Not Yet - ??",
+    title: "Fullstack Developer",
+    desc: ["Some thing CRAZY XD"],
   },
 ];
 
